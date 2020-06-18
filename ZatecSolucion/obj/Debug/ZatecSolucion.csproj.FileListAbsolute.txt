@@ -1,0 +1,10 @@
+F:\AppCompra\comprar\ZatecSolucion\bin\Debug\ZatecSolucion.exe.config
+F:\AppCompra\comprar\ZatecSolucion\bin\Debug\ZatecSolucion.exe
+F:\AppCompra\comprar\ZatecSolucion\bin\Debug\ZatecSolucion.pdb
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.csprojAssemblyReference.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.Compras.resources
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.Properties.Resources.resources
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.csproj.GenerateResource.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.csproj.CoreCompileInputs.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.exe
+F:\AppCompra\comprar\ZatecSolucion\obj\Debug\ZatecSolucion.pdb
