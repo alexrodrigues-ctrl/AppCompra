@@ -1,0 +1,16 @@
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\ZatecSolucion.exe.config
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\ZatecSolucion.exe
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\ZatecSolucion.pdb
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.csprojAssemblyReference.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.Compras.resources
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.Properties.Resources.resources
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.csproj.GenerateResource.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.csproj.CoreCompileInputs.cache
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.exe
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.pdb
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\System.Core.dll
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\System.Data.DataSetExtensions.dll
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\System.Xml.Linq.dll
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\pt-BR\System.Xml.Linq.resources.dll
+F:\AppCompra\comprar\ZatecSolucion\bin\Release\pt-BR\System.Data.DataSetExtensions.resources.dll
+F:\AppCompra\comprar\ZatecSolucion\obj\Release\ZatecSolucion.csproj.CopyComplete
