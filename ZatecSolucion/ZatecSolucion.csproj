@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ZatecSolucion</RootNamespace>
     <AssemblyName>ZatecSolucion</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -38,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +48,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>calc_calculator_10824.ico</ApplicationIcon>
@@ -74,10 +76,28 @@
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmApresentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmApresentacao.Designer.cs">
+      <DependentUpon>FrmApresentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalc.Designer.cs">
+      <DependentUpon>FrmCalc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmApresentacao.resx">
+      <DependentUpon>FrmApresentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalc.resx">
+      <DependentUpon>FrmCalc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

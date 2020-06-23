@@ -53,6 +53,10 @@
             this.btn_AdicionarCaixa = new System.Windows.Forms.Button();
             this.btn_Sair = new System.Windows.Forms.Button();
             this.panelItem = new System.Windows.Forms.Panel();
+            this.panel_SaldoPositivo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_SaldoPositivo = new System.Windows.Forms.Label();
             this.panel_zerado = new System.Windows.Forms.Panel();
             this.lbrs = new System.Windows.Forms.Label();
             this.lbsaldozero = new System.Windows.Forms.Label();
@@ -63,7 +67,10 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataehora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lb_Nome = new System.Windows.Forms.Label();
+            this.btn_calculadora = new System.Windows.Forms.Button();
             this.panelItem.SuspendLayout();
+            this.panel_SaldoPositivo.SuspendLayout();
             this.panel_zerado.SuspendLayout();
             this.panelAdicionar.SuspendLayout();
             this.panelCaixa.SuspendLayout();
@@ -77,9 +84,9 @@
             this.lbNome.ForeColor = System.Drawing.Color.Navy;
             this.lbNome.Location = new System.Drawing.Point(2, 13);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(178, 15);
+            this.lbNome.Size = new System.Drawing.Size(73, 15);
             this.lbNome.TabIndex = 0;
-            this.lbNome.Text = "Bem Vindo ! Mercadinho União";
+            this.lbNome.Text = "Bem Vindo !";
             // 
             // lbValorItem
             // 
@@ -213,7 +220,7 @@
             this.txt_AdicionaCaixa.Location = new System.Drawing.Point(119, 41);
             this.txt_AdicionaCaixa.Name = "txt_AdicionaCaixa";
             this.txt_AdicionaCaixa.Size = new System.Drawing.Size(100, 20);
-            this.txt_AdicionaCaixa.TabIndex = 13;
+            this.txt_AdicionaCaixa.TabIndex = 0;
             this.txt_AdicionaCaixa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AdicionaCaixa_KeyPress);
             // 
             // lbcaixa
@@ -260,16 +267,16 @@
             this.btn_AdicionarCaixa.Location = new System.Drawing.Point(225, 39);
             this.btn_AdicionarCaixa.Name = "btn_AdicionarCaixa";
             this.btn_AdicionarCaixa.Size = new System.Drawing.Size(75, 23);
-            this.btn_AdicionarCaixa.TabIndex = 18;
+            this.btn_AdicionarCaixa.TabIndex = 1;
             this.btn_AdicionarCaixa.Text = "Confirmar";
             this.btn_AdicionarCaixa.UseVisualStyleBackColor = true;
             this.btn_AdicionarCaixa.Click += new System.EventHandler(this.btn_AdicionarCaixa_Click);
             // 
             // btn_Sair
             // 
-            this.btn_Sair.Location = new System.Drawing.Point(5, 345);
+            this.btn_Sair.Location = new System.Drawing.Point(7, 334);
             this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(308, 23);
+            this.btn_Sair.Size = new System.Drawing.Size(102, 23);
             this.btn_Sair.TabIndex = 19;
             this.btn_Sair.Text = "Sair do Aplicativo";
             this.btn_Sair.UseVisualStyleBackColor = true;
@@ -278,6 +285,7 @@
             // panelItem
             // 
             this.panelItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelItem.Controls.Add(this.panel_SaldoPositivo);
             this.panelItem.Controls.Add(this.panel_zerado);
             this.panelItem.Controls.Add(this.lb_UltimoItem);
             this.panelItem.Controls.Add(this.lbValorItem);
@@ -293,6 +301,46 @@
             this.panelItem.Name = "panelItem";
             this.panelItem.Size = new System.Drawing.Size(308, 127);
             this.panelItem.TabIndex = 20;
+            // 
+            // panel_SaldoPositivo
+            // 
+            this.panel_SaldoPositivo.Controls.Add(this.label1);
+            this.panel_SaldoPositivo.Controls.Add(this.label2);
+            this.panel_SaldoPositivo.Controls.Add(this.lb_SaldoPositivo);
+            this.panel_SaldoPositivo.Location = new System.Drawing.Point(157, 39);
+            this.panel_SaldoPositivo.Name = "panel_SaldoPositivo";
+            this.panel_SaldoPositivo.Size = new System.Drawing.Size(140, 68);
+            this.panel_SaldoPositivo.TabIndex = 24;
+            this.panel_SaldoPositivo.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "R$ : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(42, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Saldo Restante:";
+            // 
+            // lb_SaldoPositivo
+            // 
+            this.lb_SaldoPositivo.AutoSize = true;
+            this.lb_SaldoPositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_SaldoPositivo.ForeColor = System.Drawing.Color.Lime;
+            this.lb_SaldoPositivo.Location = new System.Drawing.Point(32, 17);
+            this.lb_SaldoPositivo.Name = "lb_SaldoPositivo";
+            this.lb_SaldoPositivo.Size = new System.Drawing.Size(103, 37);
+            this.lb_SaldoPositivo.TabIndex = 11;
+            this.lb_SaldoPositivo.Text = "00,00";
             // 
             // panel_zerado
             // 
@@ -368,7 +416,7 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.dataehora});
-            this.statusStrip.Location = new System.Drawing.Point(0, 373);
+            this.statusStrip.Location = new System.Drawing.Point(0, 361);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(317, 22);
             this.statusStrip.TabIndex = 23;
@@ -393,23 +441,51 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lb_Nome
+            // 
+            this.lb_Nome.AutoSize = true;
+            this.lb_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Nome.ForeColor = System.Drawing.Color.Navy;
+            this.lb_Nome.Location = new System.Drawing.Point(81, 13);
+            this.lb_Nome.Name = "lb_Nome";
+            this.lb_Nome.Size = new System.Drawing.Size(16, 15);
+            this.lb_Nome.TabIndex = 24;
+            this.lb_Nome.Text = "...";
+            // 
+            // btn_calculadora
+            // 
+            this.btn_calculadora.Location = new System.Drawing.Point(205, 334);
+            this.btn_calculadora.Name = "btn_calculadora";
+            this.btn_calculadora.Size = new System.Drawing.Size(102, 23);
+            this.btn_calculadora.TabIndex = 25;
+            this.btn_calculadora.Text = "Calculadora";
+            this.btn_calculadora.UseVisualStyleBackColor = true;
+            this.btn_calculadora.Click += new System.EventHandler(this.btn_calculadora_Click);
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 395);
+            this.ClientSize = new System.Drawing.Size(317, 383);
+            this.Controls.Add(this.btn_calculadora);
+            this.Controls.Add(this.lb_Nome);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.panelCaixa);
             this.Controls.Add(this.panelAdicionar);
             this.Controls.Add(this.panelItem);
             this.Controls.Add(this.btn_Sair);
             this.Controls.Add(this.lbNome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Compras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Compra";
             this.Load += new System.EventHandler(this.Compras_Load);
             this.panelItem.ResumeLayout(false);
             this.panelItem.PerformLayout();
+            this.panel_SaldoPositivo.ResumeLayout(false);
+            this.panel_SaldoPositivo.PerformLayout();
             this.panel_zerado.ResumeLayout(false);
             this.panel_zerado.PerformLayout();
             this.panelAdicionar.ResumeLayout(false);
@@ -432,7 +508,6 @@
         private System.Windows.Forms.Label lbsaldorestante;
         private System.Windows.Forms.Label lb_SaldoRestante;
         private System.Windows.Forms.Label lbutimoitem;
-        private System.Windows.Forms.TextBox txt_ValorItem;
         private System.Windows.Forms.Button btn_ValorItem;
         private System.Windows.Forms.Label lbadicioanrcaixa;
         private System.Windows.Forms.Label lb_UltimoItem;
@@ -458,6 +533,13 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel dataehora;
         public System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lb_Nome;
+        private System.Windows.Forms.Button btn_calculadora;
+        private System.Windows.Forms.Panel panel_SaldoPositivo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_SaldoPositivo;
+        public System.Windows.Forms.TextBox txt_ValorItem;
     }
 }
 

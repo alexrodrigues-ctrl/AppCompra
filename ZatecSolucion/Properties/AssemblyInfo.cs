@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ZatecSolucion")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Zatec")]
 [assembly: AssemblyProduct("ZatecSolucion")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  by AlexRodrigues -2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
